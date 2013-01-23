@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+	
+    <groupId>com.webwarp.logging</groupId>
+    <artifactId>logging</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+	
+    <name>logging</name>
+	
+    <modules>
+        <module>slf4j-example</module>
+        <module>log4j-hello</module>
+        <module>log4j-assembly</module>
+        <module>log4j-mavenfiltering</module>
+        <module>loggly-logback-appender</module>
+        <module>loggly-asynchttp</module>
+        <module>loggly-java</module>
+        <!--module>logging-splunk</module-->
+    </modules>
+	
+</project>
