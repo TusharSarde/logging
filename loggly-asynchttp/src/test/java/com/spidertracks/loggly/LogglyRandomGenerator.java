@@ -1,6 +1,3 @@
-/*
- *  $Id$
- */
 package com.spidertracks.loggly;
 
 import java.util.Random;

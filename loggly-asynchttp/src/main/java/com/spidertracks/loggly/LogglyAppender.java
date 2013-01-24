@@ -42,6 +42,7 @@ public class LogglyAppender extends AppenderSkeleton {
         super(isActive);
     }
 
+    @Override
     public void close() {
         // Stop is a blocking call, it waits for HttpPost to finish.
         poster.stop();
@@ -50,6 +51,7 @@ public class LogglyAppender extends AppenderSkeleton {
         db.shutdown();
     }
 
+    @Override
     public boolean requiresLayout() {
         return true;
     }

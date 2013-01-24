@@ -1,6 +1,3 @@
-/**
- *
- */
 package com.spidertracks.loggly;
 
 import java.sql.*;
@@ -18,7 +15,6 @@ import org.hsqldb.server.ServerConstants;
  * @author Todd Nine
  */
 public class EmbeddedDb {
-
 
     private Connection conn;
     private ErrorHandler errorHandler;
@@ -54,8 +50,7 @@ public class EmbeddedDb {
         try {
             createTableAndIndex(dirName, logName);
         } catch (SQLException e) {
-            errorHandler.error("Unable to create local database for log queue",
-                    e, 1);
+            errorHandler.error("Unable to create local database for log queue", e, 1);
         }
     }
 

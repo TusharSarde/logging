@@ -1,10 +1,6 @@
-/*
- *  $Id$
- */
 package com.spidertracks.loggly;
 
 import java.util.Properties;
-
 import org.apache.log4j.*;
 
 /**
@@ -14,7 +10,7 @@ import org.apache.log4j.*;
 public class TestConfigHelper {
     public final static String LOGGER_NAME = "logglyTest";
     
-    private static final Level defaultConsoleLevel = Level.INFO; //Level.WARN;
+    private static final Level defaultConsoleLevel       = Level.INFO; //Level.WARN;
     private static final String defaultConversionPattern = "%d [%t] %-5p %c{4} - %m%n";
 
     /**

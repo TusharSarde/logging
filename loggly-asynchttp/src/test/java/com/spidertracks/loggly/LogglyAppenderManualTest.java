@@ -1,6 +1,3 @@
-/*
- *  $Id$
- */
 package com.spidertracks.loggly;
 
 import org.apache.log4j.LogManager;
@@ -11,11 +8,10 @@ import org.apache.log4j.Logger;
  *
  */
 public class LogglyAppenderManualTest {
-
     
     public static void main(String[] args) throws InterruptedException {
         final String apiKey = args[0];
-        if (apiKey == null || apiKey == "") {
+        if (apiKey == null || "".equals(apiKey)) {
             System.out.println("You must specify your loggly api key to test this code");
             System.exit(-1);
         }

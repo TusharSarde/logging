@@ -17,6 +17,7 @@
         <module>loggly-logback-appender</module>
         <module>loggly-asynchttp</module>
         <module>loggly-java</module>
+        <module>log4j2loggly</module>
         <!--module>logging-splunk</module-->
     </modules>
 	
