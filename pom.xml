@@ -10,7 +10,19 @@
     <name>logging</name>
 	
     <modules>
+<<<<<<< HEAD
         <module>log4j-mavenfiltering</module>
+=======
+        <module>slf4j-example</module>
+        <module>log4j-hello</module>
+        <module>log4j-assembly</module>
+        <module>log4j-mavenfiltering</module>
+        <module>loggly-logback-appender</module>
+        <module>loggly-asynchttp</module>
+        <module>loggly-java</module>
+        <module>log4j2loggly</module>
+        <!--module>logging-splunk</module-->
+>>>>>>> c176df035c10ee95a5890c111be456a4bf5d1137
     </modules>
 	
 </project>
