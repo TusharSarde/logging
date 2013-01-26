@@ -7,10 +7,12 @@ To run this sample:
 1. Run "mvn install" on the flume-common project.
 2. Download and install Flume.
 3. Copy the flume-conf.properties in src/main/resources/flume/conf to the conf directory of where Flume was installed.
-4. In a terminal window start flume using "bin/flume-ng agent --conf ./conf/ -f conf/flume-conf.properties -Dflume.root.logger=DEBUG,console -n agent"
+4. In a terminal window start flume using 
+   "bin/flume-ng agent --conf ./conf/ -f conf/flume-conf.properties -Dflume.root.logger=DEBUG,console -n agent"
 5. Verify Flume started and configured an Avro source, a memory channel and a logger sink by reviewing the startup log.
 6. In a separate terminal window run "mvn jetty:run" in this project.
-7. Verify the Flume appender connected to the Flume agent by finding "Starting FlumeAvroManager FlumeAvro[localhost:8800]"
+7. Verify the Flume appender connected to the Flume agent by finding 
+   "Starting FlumeAvroManager FlumeAvro[localhost:8800]"
    in the jetty log and that there are no exceptions and also by seeing something like
     "/127.0.0.1:53351 => /127.0.0.1:8800] OPEN" in the Flume log.
 8. In a separate terminal window in the project directory run "tail -f target/logs/app.log" to see the application
