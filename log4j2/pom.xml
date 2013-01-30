@@ -22,6 +22,7 @@
         <module>flume-common</module>
         <module>flume-remote</module>
         <module>flume-embedded</module>
+        <module>log4j2-eventgenerator</module>
     </modules>
     
     <build>
